@@ -3,29 +3,273 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Casa Giò - Affittacamere e B&B a Ostia Lido di Roma. Via Angelo Olivieri 34, 00122 Ostia Roma. A 300 mt dal mare, vicino alla Guardia di Finanza e alla stazione Ostia Lido Centro. CIN: IT058091C291C29G6ZYKYP">
-  <title>Casa Giò — Affittacamere B&B Ostia Roma</title>
 
-  <!-- Google Fonts: Playfair Display (titoli) + Lato (testi) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ================================================
+       SEO PRIMARIO
+  ================================================ -->
+  <title>Casa Giò — Affittacamere e B&B a Ostia Lido di Roma | Via Angelo Olivieri 34</title>
+  <meta name="description" content="Casa Giò: affittacamere e B&B a Ostia Lido di Roma, Via Angelo Olivieri 34. A 300 mt dal mare, 3 minuti a piedi dalla Guardia di Finanza di Ostia, 5 minuti dalla stazione Ostia Lido Centro. Camere singole, doppie e triple con bagno privato. Tel: +39 347 606 1192">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="author" content="Casa Giò — Affittacamere Ostia Roma">
 
-  <!-- Foglio di stile principale -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.casa-gio.it/">
+
+  <!-- Geo meta tag (segnali geografici per motori locali) -->
+  <meta name="geo.region" content="IT-RM">
+  <meta name="geo.placename" content="Ostia Lido, Roma">
+  <meta name="geo.position" content="41.7289;12.2789">
+  <meta name="ICBM" content="41.7289, 12.2789">
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.casa-gio.it/">
+  <meta property="og:title" content="Casa Giò — Affittacamere e B&B a Ostia Lido di Roma">
+  <meta property="og:description" content="Affittacamere e B&B a Ostia Lido di Roma, a 300 mt dal mare e 3 minuti dalla Guardia di Finanza. Camere con bagno privato. Tel: +39 347 606 1192">
+  <meta property="og:image" content="https://www.casa-gio.it/img/spiaggia-ostia-lido-roma-casa-gio-hero.jpg">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Casa Giò Ostia">
+
+  <!-- hreflang (segnala a Google che il sito è in italiano per utenti italiani) -->
+  <link rel="alternate" hreflang="it" href="https://www.casa-gio.it/">
+  <link rel="alternate" hreflang="x-default" href="https://www.casa-gio.it/">
+
+  <!-- ================================================
+       PERFORMANCE: PRELOAD IMMAGINE HERO (LCP)
+       Critico per Core Web Vitals — non rimuovere
+  ================================================ -->
+  <link rel="preload"
+        as="image"
+        href="img/spiaggia-ostia-lido-roma-casa-gio-hero.jpg"
+        fetchpriority="high"
+        media="(min-width: 769px)">
+  <link rel="preload"
+        as="image"
+        href="img/spiaggia-ostia-lido-roma-mobile.jpg"
+        fetchpriority="high"
+        media="(max-width: 768px)">
+
+  <!-- ================================================
+       SCHEMA.ORG — LodgingBusiness
+  ================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "@id": "https://www.casa-gio.it/#lodging",
+    "name": "Casa Giò",
+    "alternateName": ["Casa Gio Ostia", "Affittacamere Casa Giò Ostia"],
+    "description": "Casa Giò è un'affittacamere e B&B situata in Via Angelo Olivieri 34, 00122 Ostia Lido di Roma. Offre camere singole, doppie e triple con bagno privato, a 300 metri dal mare di Ostia e a 3 minuti a piedi dalla Guardia di Finanza di Ostia.",
+    "url": "https://www.casa-gio.it/",
+    "telephone": ["+393476061192", "+393286140416"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Angelo Olivieri 34",
+      "addressLocality": "Ostia Lido",
+      "addressRegion": "RM",
+      "postalCode": "00122",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.7289,
+      "longitude": 12.2789
+    },
+    "hasMap": "https://www.google.com/maps/place/Via+Angelo+Olivieri+34,+00122+Roma+RM",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "CIN",
+      "value": "IT058091C291C29G6ZYKYP"
+    },
+    "priceRange": "€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Contanti, Bonifico bancario",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Bagno privato", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Camera singola", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Camera doppia", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Camera tripla", "value": true}
+    ],
+    "nearbyAttractions": [
+      "Spiaggia di Ostia Lido (300 metri)",
+      "Guardia di Finanza — Scuola di Polizia Economico-Finanziaria in Via delle Fiamme Gialle (3 minuti a piedi)",
+      "Centro Reclutamento Guardia di Finanza in Via delle Fiamme Gialle (3 minuti a piedi)",
+      "Stazione Ostia Lido Centro (5 minuti a piedi)",
+      "Aeroporto Leonardo da Vinci di Fiumicino (20 minuti in auto)"
+    ]
+  }
+  </script>
+
+  <!-- ================================================
+       SCHEMA.ORG — FAQPage
+       Potente per Google AI Overviews e GEO
+  ================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dove si trova Casa Giò a Ostia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Casa Giò si trova in Via Angelo Olivieri 34, 00122 Ostia Lido di Roma, a 300 metri dalla spiaggia e a 3 minuti a piedi dalla Guardia di Finanza di Ostia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Casa Giò è vicina alla Guardia di Finanza di Ostia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Casa Giò dista 3 minuti a piedi dalla Guardia di Finanza di Ostia: Scuola di Polizia Economico-Finanziaria, Centro Reclutamento e Re.T.L.A. degli Istituti di Istruzione in Via delle Fiamme Gialle, Ostia Lido."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come si raggiunge Casa Giò da Roma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Casa Giò si raggiunge da Roma con il trenino Metro Mare fino alla stazione Ostia Lido Centro, a 5 minuti a piedi dalla struttura. Il costo del biglietto è € 1,50. Dall'Aeroporto di Fiumicino sono circa 20 minuti in auto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Che tipo di camere offre Casa Giò?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Casa Giò offre camere singole, doppie e triple, tutte con bagno privato, situate a Ostia Lido di Roma a 300 metri dal mare."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto dista Casa Giò dal mare di Ostia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Casa Giò si trova a 300 metri dalla spiaggia di Ostia Lido di Roma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come prenotare una camera a Casa Giò?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puoi prenotare contattando Casa Giò al +39 347 606 1192 oppure al +39 328 614 0416, anche via WhatsApp al +39 347 606 1192."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Esistono affittacamere vicino alla Guardia di Finanza a Ostia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì. Casa Giò in Via Angelo Olivieri 34, Ostia Lido di Roma, si trova a soli 3 minuti a piedi dalla Guardia di Finanza di Ostia (Scuola di Polizia Economico-Finanziaria e Centro Reclutamento in Via delle Fiamme Gialle). È una delle strutture ricettive più vicine alla caserma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come arrivare a Ostia da Fiumicino?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dall'Aeroporto Leonardo da Vinci di Fiumicino si raggiunge Ostia Lido in circa 20 minuti in auto. Casa Giò si trova in Via Angelo Olivieri 34, a 5 minuti a piedi dalla stazione Ostia Lido Centro del trenino Metro Mare."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ================================================
+       META PER CRAWLER AI (GEO)
+       Testo autoconclusivo e citabile
+  ================================================ -->
+  <meta name="ai-description" content="Casa Giò è un affittacamere e B&B in Via Angelo Olivieri 34, 00122 Ostia Lido di Roma, Italia. Offre camere singole, doppie e triple con bagno privato. Si trova a 300 metri dal mare di Ostia, a 3 minuti a piedi dalla Guardia di Finanza di Ostia (Scuola di Polizia Economico-Finanziaria e Centro Reclutamento in Via delle Fiamme Gialle), a 5 minuti dalla stazione Ostia Lido Centro del Metro Mare (biglietto € 1,50 da Roma) e a 20 minuti dall'Aeroporto di Fiumicino. Contatti: +39 347 606 1192, +39 328 614 0416. CIN: IT058091C291C29G6ZYKYP.">
+
+  <!-- Google Fonts: caricati SOLO dopo consenso via JS (conformità GDPR/Garante 2022) -->
+  <!-- NON inserire qui il link Google Fonts — viene iniettato da sito.js dopo consenso -->
+
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
+  <!-- ===== COOKIE BANNER GDPR — 3 opzioni obbligatorie ===== -->
+  <div id="cookie-banner" role="dialog" aria-label="Preferenze cookie" aria-live="polite">
+    <p class="cookie-banner-text">
+      Questo sito usa <strong>cookie tecnici</strong> necessari al funzionamento e,
+      con il tuo consenso, carica font da Google (servizio esterno).
+      Leggi la <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+      e la <a href="cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>.
+    </p>
+    <div class="cookie-banner-btns">
+      <button id="cookie-accept-all" class="cookie-btn cookie-btn-primary">Accetta tutti</button>
+      <button id="cookie-reject" class="cookie-btn cookie-btn-secondary">Rifiuta non essenziali</button>
+      <button id="cookie-customize" class="cookie-btn cookie-btn-ghost">Personalizza</button>
+    </div>
+  </div>
+
   <!-- ===== SEZIONE 1: HERO ===== -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content fade-el">
-        <h1 class="hero-title">Casa Giò</h1>
-        <div class="hero-line" aria-hidden="true"></div>
-        <p class="hero-subtitle">Affittacamere &middot; B&amp;B Ostia</p>
+  <header class="hero" aria-label="Casa Giò — Affittacamere B&B Ostia Roma">
+
+    <!-- IMMAGINE HERO come <picture>/<img> (non CSS background) per LCP ottimale -->
+    <!-- fetchpriority="high" = browser la scarica prima di qualsiasi altra risorsa -->
+    <!-- loading="eager" = mai lazy load sull'immagine hero -->
+    <picture>
+      <source
+        srcset="img/spiaggia-ostia-lido-roma-mobile.jpg"
+        media="(max-width: 768px)"
+        width="941"
+        height="941">
+      <img
+        class="hero-bg-img"
+        src="img/spiaggia-ostia-lido-roma-casa-gio-hero.jpg"
+        alt="Spiaggia di Ostia Lido di Roma — affittacamere Casa Giò"
+        fetchpriority="high"
+        loading="eager"
+        width="1672"
+        height="941"
+        aria-hidden="true">
+    </picture>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content fade-el">
+      <h1 class="hero-title">Casa Giò</h1>
+      <div class="hero-line" aria-hidden="true"></div>
+      <p class="hero-subtitle">Affittacamere &middot; B&amp;B Ostia</p>
+      <p class="hero-geo">Ostia Lido di Roma — Via Angelo Olivieri 34</p>
+    </div>
+
+  </header>
+
+  <!-- ===== SEZIONE CHI SIAMO — GEO/SEO ===== -->
+  <section class="chi-siamo-section" aria-labelledby="chi-siamo-titolo">
+    <div class="chi-siamo-inner">
+      <h2 class="section-title" id="chi-siamo-titolo">
+        Affittacamere e B&amp;B a Ostia Lido di Roma
+      </h2>
+      <div class="chi-siamo-testo">
+        <p>
+          <strong>Casa Giò</strong> è un'affittacamere e B&amp;B situata in
+          <strong>Via Angelo Olivieri 34, 00122 Ostia Lido di Roma</strong>.
+          La struttura offre <strong>camere singole, doppie e triple con bagno privato</strong>,
+          a soli 300 metri dalla spiaggia di Ostia.
+        </p>
+        <p>
+          Casa Giò dista <strong>3 minuti a piedi dalla Guardia di Finanza di Ostia</strong> —
+          Scuola di Polizia Economico-Finanziaria, Centro Reclutamento e Re.T.L.A. degli Istituti
+          di Istruzione in Via delle Fiamme Gialle — ed è la scelta ideale per chi cerca un
+          <strong>alloggio vicino alla Guardia di Finanza a Ostia Lido</strong>.
+        </p>
+        <p>
+          La struttura è raggiungibile da Roma con il <strong>trenino Metro Mare</strong>
+          fino alla stazione <strong>Ostia Lido Centro</strong>, a 5 minuti a piedi,
+          al costo di € 1,50. L'<strong>Aeroporto Leonardo da Vinci di Fiumicino</strong>
+          si trova a circa 20 minuti in auto.
+          Supermercati, pizzerie, bar e ristoranti a pochi passi.
+        </p>
       </div>
     </div>
-  </header>
+  </section>
 
   <main>
 
@@ -36,47 +280,47 @@
       <div class="gallery-grid">
 
         <div class="gallery-item fade-el">
-          <img src="img/img-spiaggia.jpg" alt="Affittacamere B&B Ostia Roma">
+          <img src="img/affittacamere-bb-ostia-lido-roma-vicino-mare.jpg" alt="Spiaggia di Ostia Lido di Roma vicino all'affittacamere Casa Giò">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/CAM%201.jpg" alt="Camera singola" loading="lazy">
+          <img src="img/camera-singola-affittacamere-casa-gio-ostia.jpg" alt="Camera singola affittacamere Casa Giò Ostia Lido Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/CAM%20D.jpg" alt="Camera doppia" loading="lazy">
+          <img src="img/camera-doppia-bb-ostia-lido-roma.jpg" alt="Camera doppia B&B Casa Giò Ostia Lido di Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/CAMDX1.jpg" alt="Camera doppia — seconda vista" loading="lazy">
+          <img src="img/camera-doppia-bagno-privato-ostia-roma.jpg" alt="Camera doppia con bagno privato affittacamere Ostia Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/CAMT1.jpg" alt="Camera tripla" loading="lazy">
+          <img src="img/camera-tripla-affittacamere-ostia-lido.jpg" alt="Camera tripla affittacamere Casa Giò Ostia Lido" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/BAGNOD.jpg" alt="Bagno camera doppia" loading="lazy">
+          <img src="img/bagno-privato-camera-doppia-bb-ostia-roma.jpg" alt="Bagno privato camera doppia B&B Ostia Lido Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/BAGNODX.jpg" alt="Bagno — seconda vista" loading="lazy">
+          <img src="img/bagno-con-doccia-affittacamere-ostia-lido.jpg" alt="Bagno con doccia affittacamere Casa Giò Ostia" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/BAGNOGT.jpg" alt="Bagno grande" loading="lazy">
+          <img src="img/bagno-grande-bb-casa-gio-ostia.jpg" alt="Bagno grande affittacamere Ostia Lido di Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/BAGNOT.jpg" alt="Bagno camera tripla" loading="lazy">
+          <img src="img/bagno-camera-tripla-affittacamere-ostia-roma.jpg" alt="Bagno camera tripla B&B Casa Giò Ostia Roma" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/IMM%20OSTIA.jpg" alt="Veduta di Ostia" loading="lazy">
+          <img src="img/ostia-lido-roma-vicino-affittacamere-casa-gio.jpg" alt="Ostia Lido di Roma — mare e spiaggia vicino a Casa Giò" loading="lazy">
         </div>
 
         <div class="gallery-item fade-el">
-          <img src="img/INSEGNA%20GF.jpg" alt="Scuola di Polizia della Guardia di Finanza — punto di riferimento" loading="lazy">
+          <img src="img/guardia-di-finanza-ostia-3-minuti-casa-gio.jpg" alt="Guardia di Finanza di Ostia — a 3 minuti a piedi dall'affittacamere Casa Giò" loading="lazy">
         </div>
 
       </div>
@@ -91,11 +335,15 @@
         <div class="location-info fade-el">
           <p class="address">Via Angelo Olivieri 34<br>00122 Ostia, Roma</p>
           <p class="location-desc">
-            A soli 300 mt dal mare, 3 minuti a piedi dal Centro Reclutamento della
-            Guardia di Finanza, supermercati, pizzerie, bar e ristoranti.<br><br>
-            A soli 5 minuti dalla Stazione di Ostia Lido Centro, a 20 minuti
-            dall'Aeroporto di Fiumicino ed è facilmente raggiungibile da Roma
-            con il trenino Metro Mare al costo di € 1,50.
+            <strong>Casa Giò — Affittacamere a Ostia Lido di Roma</strong> si trova
+            a 300 metri dal mare, a 3 minuti a piedi dalla
+            <strong>Guardia di Finanza di Ostia</strong>
+            (Scuola di Polizia Economico-Finanziaria, Centro Reclutamento
+            e Re.T.L.A. in Via delle Fiamme Gialle).<br><br>
+            A 5 minuti dalla <strong>Stazione Ostia Lido Centro</strong>
+            e a 20 minuti dall'<strong>Aeroporto di Fiumicino</strong>.
+            Raggiungibile da Roma con il <strong>Metro Mare</strong> a € 1,50.
+            Supermercati, pizzerie, bar e ristoranti nelle immediate vicinanze.
           </p>
           <div class="phones">
             <a href="tel:+393476061192" class="phone-link">
@@ -135,6 +383,75 @@
       </div>
     </section>
 
+    <!-- ===== SEZIONE FAQ — GEO + Google AI Overviews ===== -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-titolo">
+      <div class="faq-inner">
+        <h2 class="section-title" id="faq-titolo">Domande Frequenti</h2>
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary class="faq-question">Dove si trova Casa Giò a Ostia?</summary>
+            <p class="faq-answer">Casa Giò si trova in <strong>Via Angelo Olivieri 34,
+            00122 Ostia Lido di Roma</strong>, a 300 metri dalla spiaggia
+            e a 3 minuti a piedi dalla Guardia di Finanza.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Casa Giò è vicina alla Guardia di Finanza di Ostia?</summary>
+            <p class="faq-answer">Sì. Casa Giò dista 3 minuti a piedi dalla
+            <strong>Guardia di Finanza di Ostia</strong>: Scuola di Polizia
+            Economico-Finanziaria, Centro Reclutamento e Re.T.L.A. in Via delle
+            Fiamme Gialle, Ostia Lido.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Come si raggiunge Casa Giò da Roma?</summary>
+            <p class="faq-answer">Con il <strong>trenino Metro Mare</strong> fino alla
+            stazione <strong>Ostia Lido Centro</strong> (5 minuti a piedi),
+            biglietto € 1,50. In auto dall'<strong>Aeroporto di Fiumicino</strong>:
+            circa 20 minuti.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Che tipo di camere offre Casa Giò?</summary>
+            <p class="faq-answer">Casa Giò offre <strong>camere singole, doppie
+            e triple</strong>, tutte con <strong>bagno privato</strong>,
+            a 300 metri dal mare di Ostia Lido di Roma.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Quanto dista Casa Giò dal mare di Ostia?</summary>
+            <p class="faq-answer">Casa Giò si trova a <strong>300 metri
+            dalla spiaggia di Ostia Lido di Roma</strong>.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Come prenotare una camera a Casa Giò?</summary>
+            <p class="faq-answer">Chiama o scrivi su WhatsApp al
+            <a href="tel:+393476061192"><strong>+39 347 606 1192</strong></a>
+            oppure al <a href="tel:+393286140416"><strong>+39 328 614 0416</strong></a>.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Esistono affittacamere vicino alla Guardia di Finanza a Ostia?</summary>
+            <p class="faq-answer">Sì. <strong>Casa Giò</strong> in Via Angelo Olivieri 34,
+            Ostia Lido, si trova a soli 3 minuti a piedi dalla Guardia di Finanza
+            (Scuola di Polizia Economico-Finanziaria e Centro Reclutamento in Via
+            delle Fiamme Gialle). È una delle strutture ricettive più vicine.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Come arrivare a Casa Giò dall'Aeroporto di Fiumicino?</summary>
+            <p class="faq-answer">Dall'<strong>Aeroporto Leonardo da Vinci di Fiumicino</strong>
+            si raggiunge Casa Giò in circa 20 minuti in auto.
+            In treno: Metro Mare fino a Ostia Lido Centro (5 minuti a piedi
+            dall'affittacamere).</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -152,8 +469,13 @@
 
       <div class="footer-col footer-center">
         <div class="footer-gold-line"></div>
-        <p class="footer-copy">© 2025 Casa Giò<br>Tutti i diritti riservati</p>
+        <p class="footer-copy">© 2026 Casa Giò<br>Tutti i diritti riservati</p>
         <p class="footer-cin">CIN: IT058091C291C29G6ZYKYP</p>
+        <div class="footer-policy-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
       </div>
 
       <div class="footer-col footer-anvira">
@@ -174,7 +496,18 @@
     <button id="lb-next" aria-label="Immagine successiva">&#8250;</button>
   </div>
 
-  <!-- Script animazioni scroll + lightbox -->
+  <!-- ===== PULSANTE WHATSAPP FISSO ===== -->
+  <a href="https://wa.me/393476061192"
+     class="wa-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Contattaci su WhatsApp — Casa Giò affittacamere Ostia Roma">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Script animazioni scroll + lightbox + cookie + font -->
   <script src="JS/sito.js"></script>
 
 </body>
