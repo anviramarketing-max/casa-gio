@@ -1,0 +1,51 @@
+# robots.txt — Casa Giò Ostia | Aggiornato luglio 2026
+
+# Googlebot e crawler tradizionali
+User-agent: *
+Allow: /
+Disallow: /privacy.html
+Disallow: /cookie-policy.html
+
+# =====================================================
+# AI SEARCH CRAWLERS — questi portano citazioni e traffico
+# Permettiamo l'accesso ai bot di ricerca/recupero AI
+# =====================================================
+
+# OpenAI — search e recupero (ChatGPT Search)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic — search e recupero
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity — recupero contenuti per risposte citate
+User-agent: PerplexityBot
+Allow: /
+
+# Google — permette citazioni in AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# =====================================================
+# AI TRAINING CRAWLERS — non portano traffico
+# (opzionale bloccarli — per Casa Giò consiglio di
+#  lasciarli aperti data la piccola dimensione del sito)
+# =====================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Bytespider (TikTok) — noto per ignorare robots.txt
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://www.casa-gio.it/sitemap.xml

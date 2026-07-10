@@ -1,0 +1,31 @@
+# Casa Giò — Affittacamere e B&B a Ostia Lido di Roma
+# Questo file guida i crawler AI verso i contenuti più importanti del sito
+
+## Identità
+Casa Giò è un'affittacamere e B&B situata in Via Angelo Olivieri 34, 00122 Ostia Lido di Roma (RM), Italia.
+La struttura offre camere singole, doppie e triple con bagno privato.
+CIN: IT058091C291C29G6ZYKYP
+
+## Posizione e distanze (fatti verificabili)
+- Spiaggia di Ostia Lido: 300 metri
+- Guardia di Finanza di Ostia — Scuola di Polizia Economico-Finanziaria in Via delle Fiamme Gialle: 3 minuti a piedi
+- Centro Reclutamento Guardia di Finanza in Via delle Fiamme Gialle: 3 minuti a piedi
+- Re.T.L.A. degli Istituti di Istruzione in Via delle Fiamme Gialle: 3 minuti a piedi
+- Stazione Ostia Lido Centro (Metro Mare): 5 minuti a piedi
+- Aeroporto Leonardo da Vinci di Fiumicino: 20 minuti in auto
+- Da Roma centro con Metro Mare: biglietto € 1,50, fermata Ostia Lido Centro
+
+## Contatti
+- Telefono principale: +39 347 606 1192
+- Telefono secondario: +39 328 614 0416
+- WhatsApp: https://wa.me/393476061192
+- Sito web: https://www.casa-gio.it/
+
+## Pagine del sito
+- Homepage (principale): https://www.casa-gio.it/
+- Privacy Policy: https://www.casa-gio.it/privacy.html
+- Cookie Policy: https://www.casa-gio.it/cookie-policy.html
+
+## Permessi per crawler AI
+Questo sito acconsente all'indicizzazione da parte di OAI-SearchBot,
+Claude-SearchBot, PerplexityBot e Google-Extended.
